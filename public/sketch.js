@@ -7,7 +7,7 @@ socket.on('color', setColor);
 
 function setColor(assignedColor){
   myColor = assignedColor;
-  text('Welcome' + assignedColor, width/2, height/2);
+
 }
 
 function newConnection() {
@@ -23,11 +23,19 @@ function drawOtherMouse(data) {
 
 function preload(){
   // put preload code here
+
 }
 
 function setup() {
   createCanvas(windowWidth,windowHeight)
   background("purple");
+
+  push();
+  textAlign(CENTER);
+  textSize(30);
+  fill(myColor);
+  text('Welcome' + myColor, width/2, height/2);
+  pop()
   // put setup code here
 }
 
