@@ -68,3 +68,10 @@ function mouseMoved() {
 
   socket.emit("mouse", message)
 }
+
+function draw (){
+  
+  text('Biglietto di auguri per Silvia')
+  fill(color('black'));
+  textSize(100);
+}
