@@ -7,6 +7,7 @@ socket.on('color', setColor);
 
 function setColor(assignedColor){
   myColor = assignedColor;
+  text('Welcome' + assignedColor, width/2, height/2);
 }
 
 function newConnection() {
