@@ -23,6 +23,7 @@ function newConnection(socket) {
 let clientColor = getRandomColor();
 
 socket.emit('color', clientColor)
+socket.broadcast.emit('newPlayer', clientColor);
 
   socket.on("mouse", mouseMessage);
 
