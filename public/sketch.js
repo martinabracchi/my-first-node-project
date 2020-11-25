@@ -54,6 +54,10 @@ function setup() {
   // put setup code here
 }
 
+
+
+
+
 function mouseMoved() {
   push();
   fill(myColor);
@@ -67,11 +71,4 @@ function mouseMoved() {
   };
 
   socket.emit("mouse", message)
-}
-
-function draw (){
-  
-  text('Biglietto di auguri per Silvia')
-  fill(color('black'));
-  textSize(100);
 }
